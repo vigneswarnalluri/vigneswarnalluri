@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @vigneswarnalluri
-- 👀 I’m interested in Teach
+- 👀 I’m interested in Technology
 - 🌱 I’m currently learning Full Stack
 - 💞️ I’m looking to collaborate on Google
 - 📫 How to reach me vigneswarnalluri@gmail.com
