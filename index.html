@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byproducts Business</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Byproducts Co.</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero fade-in">
+            <div class="hero-content">
+                <h2>Turning Waste Into Opportunity</h2>
+                <p>We specialize in repurposing industrial byproducts into valuable resources.</p>
+                <a href="#contact" class="btn hero-btn">Get in Touch</a>
+            </div>
+        </section>
+        <section id="about" class="content-section fade-in">
+            <h2>About Us</h2>
+            <p>Byproducts Co. is dedicated to sustainable solutions in manufacturing. Our team works with partners to transform byproducts into new materials, reducing waste and creating value.</p>
+        </section>
+        <section id="products" class="content-section fade-in">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <article class="product">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Industrial Compost">
+                    <h3>Industrial Compost</h3>
+                    <p>High-quality compost sourced from organic byproducts, ideal for agriculture.</p>
+                </article>
+                <article class="product">
+                    <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=400&q=80" alt="Reclaimed Metals">
+                    <h3>Reclaimed Metals</h3>
+                    <p>Metal scraps reprocessed for manufacturing and construction applications.</p>
+                </article>
+                <article class="product">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=400&q=80" alt="Biofuel Pellets">
+                    <h3>Biofuel Pellets</h3>
+                    <p>Energy-dense pellets produced from agricultural residues, perfect for clean energy solutions.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="content-section fade-in">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Byproducts Co. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
