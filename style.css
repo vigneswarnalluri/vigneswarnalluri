@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #004466;
     --accent-color: #ffd166;
@@ -7,6 +8,20 @@
     --font-heading: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+
+
+
+:root {
+    --primary-color: #0a213d;
+    --accent-color: #ffb703;
+    --bg-light: #f4f4f4;
+
+    --text-color: #333;
+    --transition-fast: 0.3s ease;
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,13 +29,17 @@
 }
 
 body {
+
     font-family: var(--font-heading);
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: var(--bg-light);
     color: var(--text-color);
 }
 
 header {
+
     background: linear-gradient(90deg, var(--primary-color), #022f43);
     color: white;
     padding: 1rem 2rem;
@@ -28,6 +47,22 @@ header {
     top: 0;
     z-index: 10;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+    background-color: var(--primary-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0a213d;
+
+    color: white;
+    padding: 1rem 2rem;
+
+
 }
 
 nav {
@@ -52,10 +87,19 @@ nav h1 {
     list-style: none;
     display: flex;
     gap: 1rem;
+
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
 .nav-links li {
     margin-left: 1.2rem;
+
+
+    margin-left: 1rem;
+
+
 }
 
 .nav-links a {
@@ -65,6 +109,10 @@ nav h1 {
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     padding: 0.25rem 0.5rem;
+
+
+    font-weight: 500;
+
     transition: color var(--transition-fast);
 }
 
@@ -79,6 +127,13 @@ nav h1 {
 .hero {
     position: relative;
     background: url('https://images.unsplash.com/photo-1503389152951-9c6e9163e311?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+
+
+.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1548092383-f5416bfb833d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+
+
     color: white;
     padding: 6rem 2rem;
     text-align: center;
@@ -87,6 +142,7 @@ nav h1 {
 .small-hero {
     padding: 4rem 2rem;
 }
+
 
 .hero::after {
     content: '';
@@ -104,11 +160,29 @@ nav h1 {
     max-width: 700px;
     margin: 0 auto;
     font-family: var(--font-heading);
+
+
+    max-width: 700px;
+    margin: 0 auto;
+
 }
 
 .hero-btn {
     margin-top: 1rem;
 }
+
+
+
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1548092383-f5416bfb833d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
 
 .content-section {
     padding: 2rem;
@@ -117,6 +191,9 @@ nav h1 {
     max-width: 900px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
+
+    border-radius: 8px;
+
 }
 
 .product-list {
@@ -130,6 +207,7 @@ nav h1 {
     background-color: #f9f9f9;
     padding: 1rem;
     border: 1px solid #ddd;
+
     border-radius: 6px;
     text-align: center;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
@@ -146,7 +224,6 @@ nav h1 {
 .product:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
 
 .contact-form {
     display: grid;
@@ -159,6 +236,7 @@ nav h1 {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+
     font-size: 1rem;
 }
 
@@ -177,6 +255,18 @@ nav h1 {
     background-color: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+
+}
+
+.contact-form button {
+    background-color: #0a213d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
 }
 
 footer {
@@ -186,6 +276,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
 
 /* fade-in animation used for scroll effects */
 .fade-in {
