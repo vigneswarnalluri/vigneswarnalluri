@@ -3,6 +3,12 @@
     --primary-color: #004466;
     --accent-color: #ffd166;
     --bg-light: #fafafa;
+    --text-color: #333;
+    --transition-fast: 0.3s ease;
+    --font-heading: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
 
 
 :root {
@@ -15,6 +21,7 @@
 }
 
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,6 +29,8 @@
 }
 
 body {
+
+    font-family: var(--font-heading);
 
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -37,6 +46,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 
     background-color: var(--primary-color);
 
@@ -52,6 +62,7 @@ header {
     color: white;
     padding: 1rem 2rem;
 
+
 }
 
 nav {
@@ -60,6 +71,11 @@ nav {
     align-items: center;
 }
 
+nav h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
 
 .container {
     width: 90%;
@@ -67,6 +83,10 @@ nav {
     max-width: 1100px;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 
 .nav-links {
     list-style: none;
@@ -76,15 +96,23 @@ nav {
 .nav-links li {
     margin-left: 1.2rem;
 
+
     margin-left: 1rem;
+
 
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 0.25rem 0.5rem;
+
 
     font-weight: 500;
+
     transition: color var(--transition-fast);
 }
 
@@ -100,9 +128,11 @@ nav {
     position: relative;
     background: url('https://images.unsplash.com/photo-1503389152951-9c6e9163e311?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
 
+
 .hero {
     position: relative;
     background: url('https://images.unsplash.com/photo-1548092383-f5416bfb833d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+
 
     color: white;
     padding: 6rem 2rem;
@@ -127,6 +157,10 @@ nav {
 .hero-content {
     position: relative;
     z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: var(--font-heading);
+
 
     max-width: 700px;
     margin: 0 auto;
@@ -136,6 +170,7 @@ nav {
 .hero-btn {
     margin-top: 1rem;
 }
+
 
 
     font-weight: bold;
@@ -156,7 +191,6 @@ nav {
     max-width: 900px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
-
 
     border-radius: 8px;
 
@@ -190,8 +224,6 @@ nav {
 .product:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-
-}
 
 .contact-form {
     display: grid;
@@ -258,3 +290,12 @@ footer {
     transform: translateY(0);
 }
 
+@media (max-width: 600px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav h1 {
+        margin-bottom: 0.5rem;
+    }
+}
