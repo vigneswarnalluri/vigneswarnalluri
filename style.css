@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #0a213d;
     --accent-color: #ffb703;
@@ -6,6 +7,7 @@
     --transition-fast: 0.3s ease;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +15,7 @@
 }
 
 body {
+
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: var(--bg-light);
@@ -21,6 +24,16 @@ body {
 
 header {
     background-color: var(--primary-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0a213d;
+
     color: white;
     padding: 1rem 2rem;
 }
@@ -43,6 +56,7 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
+
     font-weight: 500;
     transition: color var(--transition-fast);
 }
@@ -78,13 +92,26 @@ nav {
     margin-top: 1rem;
 }
 
+
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1548092383-f5416bfb833d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
 .content-section {
     padding: 2rem;
     background-color: white;
     margin: 1rem auto;
     max-width: 900px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
     border-radius: 8px;
+
 }
 
 .product-list {
@@ -98,6 +125,7 @@ nav {
     background-color: #f9f9f9;
     padding: 1rem;
     border: 1px solid #ddd;
+
     border-radius: 6px;
     text-align: center;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
@@ -114,6 +142,7 @@ nav {
 .product:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
 }
 
 .contact-form {
@@ -127,6 +156,7 @@ nav {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+
     font-size: 1rem;
 }
 
@@ -145,6 +175,17 @@ nav {
     background-color: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+.contact-form button {
+    background-color: #0a213d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
 }
 
 footer {
@@ -154,6 +195,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
 
 /* fade-in animation used for scroll effects */
 .fade-in {
@@ -166,3 +208,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
